@@ -4,7 +4,8 @@ Project Overview
 The Hospital Management System (HMS) is a web-based application developed using Flask (Python framework) and MySQL database to manage hospital operations. It allows users to view and manage hospital-related information such as patients, doctors, appointments, departments, and medicines.
 ### 1. Clone the Repository
 Clone this repository to your local machine:
-git clone <repository_url>
+git clone <![image](https://github.com/user-attachments/assets/29872426-9168-40d9-b4c6-08442c539859)
+>
 cd hospital-management-system
 Features
 Patient Management: View and manage patient details.
