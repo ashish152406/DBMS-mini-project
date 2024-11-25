@@ -1,0 +1,20 @@
+<h2><i class="fas fa-pills"></i> Medicines</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Stock</th>
+    </tr>
+    {% for medicine in medicines %}
+    <tr>
+        <td>{{ medicine['medicine_id'] }}</td>
+        <td>{{ medicine['name'] }}</td>
+        <td>{{ medicine['description'] }}</td>
+        <td>{{ medicine['price'] }}</td>
+        <td>{{ medicine['stock'] }}</td>
+    </tr>
+    {% endfor %}
+</table>

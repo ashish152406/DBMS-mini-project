@@ -1,0 +1,16 @@
+<h2><i class="fas fa-building"></i> Departments</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+    {% for department in departments %}
+    <tr>
+        <td>{{ department['department_id'] }}</td>
+        <td>{{ department['name'] }}</td>
+        <td>{{ department['description'] }}</td>
+    </tr>
+    {% endfor %}
+</table>

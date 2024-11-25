@@ -1,0 +1,24 @@
+<h2><i class="fas fa-user-injured"></i> Patients</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Contact</th>
+        <th>Address</th>
+        <th>Medical History</th>
+    </tr>
+    {% for patient in patients %}
+    <tr>
+        <td>{{ patient['patient_id'] }}</td>
+        <td>{{ patient['name'] }}</td>
+        <td>{{ patient['age'] }}</td>
+        <td>{{ patient['gender'] }}</td>
+        <td>{{ patient['contact'] }}</td>
+        <td>{{ patient['address'] }}</td>
+        <td>{{ patient['medical_history'] }}</td>
+    </tr>
+    {% endfor %}
+</table>

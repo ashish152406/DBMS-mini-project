@@ -1,0 +1,22 @@
+<h2><i class="fas fa-calendar-check"></i> Appointments</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Patient</th>
+        <th>Doctor</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Status</th>
+    </tr>
+    {% for appointment in appointments %}
+    <tr>
+        <td>{{ appointment['appointment_id'] }}</td>
+        <td>{{ appointment['patient_name'] }}</td>
+        <td>{{ appointment['doctor_name'] }}</td>
+        <td>{{ appointment['appointment_date'] }}</td>
+        <td>{{ appointment['appointment_time'] }}</td>
+        <td>{{ appointment['status'] }}</td>
+    </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,19 @@
+<h2><i class="fas fa-user-md"></i> Doctors</h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Specialty</th>
+        <th>Contact</th>
+        <th>Department</th>
+    </tr>
+    {% for doctor in doctors %}
+    <tr>
+        <td>{{ doctor['doctor_id'] }}</td>
+        <td>{{ doctor['name'] }}</td>
+        <td>{{ doctor['specialty'] }}</td>
+        <td>{{ doctor['contact'] }}</td>
+        <td>{{ doctor['department_id'] }}</td>
+    </tr>
+    {% endfor %}
+</table>
